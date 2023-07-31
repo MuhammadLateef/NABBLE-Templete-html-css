@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- font awesome cdn -->
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts cdn -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>Media & Events</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 15px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app1 {
+      left: 16px;
+      background-color: #EF4E24;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="../Assets/fav-icon.ico">
+</head>
+
+<body>
+
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=917669237937&text=Hello,%20Latest%20Blog%20%26%20Articles%20by%20Home%20Food%20Delivery%20App%3A%20Homefoodi-https://homefoodi.com/blog/%20How%20do%20I%20Order%20from%20Homefoodi...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+234917669237937'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <!-- Navbar  -->
+  <nav class="w-full bg-white shadow-lg fixed" style="z-index: 99;">
+    <div class="mx-auto px-5 w-[90%] mx-auto">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <!-- Website Logo -->
+            <a href="home.html" class="flex items-center py-4 px-2">
+              <img src="../Assets/images/logo.webp" alt="Logo" class="h-8 w-full mr-2" />
+            </a>
+          </div>
+        </div>
+        <!-- Secondary Navbar items -->
+        <div class="hidden lg:flex items-center lg:space-x-9 md:space-x-2">
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="home.html" class="py-4 px-2 text-[#e65c00] font-semibold">HOME</a>
+            <li class="list-none relative group">
+              <a href="#" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">WHO ARE WE <span><i
+                    class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul
+                class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+                <li class="py-2 hover:bg-gray-100"><a href="Aboutus.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="ourcheif.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Gallery.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Newsevents.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+              </ul>
+            </li>
+            <li class="list-none relative group">
+              <a href="ServingArea.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">DELIVERY
+                AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul
+                class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+                <li class="py-2 hover:bg-gray-100"><a href="devliveryareasDilhi.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Bangalore.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Hyderabad.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Mumbai.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Noida.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="Ghaziabad.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="Gurgaon.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="GreaterNoida.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+              </ul>
+            </li>
+            <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">BLOGS</a>
+            <a href="contactus.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">CONTACT US
+            </a>
+          </div>
+          <a href="HowToOrder.html"
+            class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded-full hover:bg-[#ff944d] hover:text-white transition duration-300">HOW
+            TO ORDER</a>
+          <a href="joinChef.html"
+            class="py-1 px-2 font-medium text-white bg-green-700 rounded-full hover:bg-green-400 transition duration-300">JOIN
+            A CHEF</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="home.html" class="block text-sm px-2 py-2 text-white bg-[#e65c00] font-semibold">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 font-semibold transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="Aboutus.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="ourcheif.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="#"
+                class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Newsevents.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Noida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Ghaziabad.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Gurgaon.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="GreaterNoida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="ServingArea.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="devliveryareasDilhi.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Bangalore.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Hyderabad.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Mumbai.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Noida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Ghaziabad.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Gurgaon.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="GreaterNoida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="contactus.html"
+            class="py-4 px-2 uppercase text-gray-500 font-semibold transition duration-300">Contact Us</a>
+        </li>
+        <li class="py-4 ml-3 my-3">
+          <a href="HowToOrder.html"
+            class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded-full hover:bg-[#ff944d] hover:text-white transition duration-300">HOW
+            TO ORDER</a>
+        <li class="py-4 ml-3 my-3">
+          <a href="joinChef.html"
+            class="py-1 px-2 bg-[#2F7F2D] font-medium text-white border-rounded rounded-full hover:bg-[#2F7F2D] hover:text-white transition duration-300">JOIN
+            A CHEF</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="aboutHeader">
+    <div class="aboutHeader_bgImage flex justify-center items-center h-[40vh] bg-cover bg-center bg-no-repeat"
+      style="background-image: url(../assets/images/MediaHeader.png);background-size: cover;">
+      <div class="flex justify-center items-center">
+        <h2
+          class="text-white lg:text-[3rem] text-[2rem] font-normal font-['Roboto Condensed',Helvetica,Arial,Lucida,sans-serif']">
+          Media & Events
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- media company logo cards start here -->
+  <div>
+    <div class="grid lg:grid-cols-6 w-[80%] mx-auto gap-x-10 gap-y-4 py-5">
+      <!-- first row start here -->
+      <div class="border border-[#171a17] py-1 ">
+        <img src="../assets/images/media_logo_1.jpg" alt="../assets/images/media_logo_1.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_2.jpg" alt="../assets/images/media_logo_2.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_3.jpg" alt="../assets/images/media_logo_3.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_4.jpg" alt="../assets/images/media_logo_4.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_5.jpg" alt="../assets/images/media_logo_5.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_6.jpg" alt="../assets/images/media_logo_6.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- first row end here -->
+
+      <!-- 2 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_7.jpg" alt="../assets/images/media_logo_7.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_8.jpg" alt="../assets/images/media_logo_8.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_9.jpg" alt="../assets/images/media_logo_9.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_10.jpg" alt="../assets/images/media_logo_10.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_11.jpg" alt="../assets/images/media_logo_11.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_12.jpg" alt="../assets/images/media_logo_12.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 2 row end here -->
+      <!-- 3 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_13.jpg" alt="../assets/images/media_logo_13.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_14.jpg" alt="../assets/images/media_logo_14.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_15.jpg" alt="../assets/images/media_logo_15.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_16.jpg" alt="../assets/images/media_logo_16.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_17.jpg" alt="../assets/images/media_logo_17.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_18.jpg" alt="../assets/images/media_logo_18.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 3 row end here -->
+      <!-- 4 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_19.jpg" alt="../assets/images/media_logo_19.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_20.jpg" alt="../assets/images/media_logo_20.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_21.jpg" alt="../assets/images/media_logo_21.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_22.jpg" alt="../assets/images/media_logo_22.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_23.jpg" alt="../assets/images/media_logo_23.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_24.jpg" alt="../assets/images/media_logo_24.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 4 row end here -->
+      <!-- 5 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_25.jpg" alt="../assets/images/media_logo_25.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_26.jpg" alt="../assets/images/media_logo_26.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_27.jpg" alt="../assets/images/media_logo_27.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_28.jpg" alt="../assets/images/media_logo_28.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_29.jpg" alt="../assets/images/media_logo_29.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_30.jpg" alt="../assets/images/media_logo_30.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 5 row end here -->
+      <!-- 6 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_31.jpg" alt="../assets/images/media_logo_31.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_32.jpg" alt="../assets/images/media_logo_32.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_33.jpg" alt="../assets/images/media_logo_33.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_34.jpg" alt="../assets/images/media_logo_34.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_35.jpg" alt="../assets/images/media_logo_35.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_36.jpg" alt="../assets/images/media_logo_36.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 6 row end here -->
+
+      <!-- 7 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_37.jpg" alt="../assets/images/media_logo_37.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_38.jpg" alt="../assets/images/media_logo_38.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_39.jpg" alt="../assets/images/media_logo_39.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_40.jpg" alt="../assets/images/media_logo_40.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_41.jpg" alt="../assets/images/media_logo_41.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_42.jpg" alt="../assets/images/media_logo_42.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 7 row end here -->
+
+      <!-- 8 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_43.jpg" alt="../assets/images/media_logo_43.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_44.jpg" alt="../assets/images/media_logo_44.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_45.jpg" alt="../assets/images/media_logo_45.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_46.jpg" alt="../assets/images/media_logo_46.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_47.jpg" alt="../assets/images/media_logo_47.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_48.jpg" alt="../assets/images/media_logo_48.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 8 row end here -->
+
+      <!-- 9 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_49.jpg" alt="../assets/images/media_logo_49.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_50.jpg" alt="../assets/images/media_logo_50.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_51.jpg" alt="../assets/images/media_logo_51.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_52.jpg" alt="../assets/images/media_logo_52.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_53.jpg" alt="../assets/images/media_logo_53.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_54.jpg" alt="../assets/images/media_logo_54.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 9 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_55.jpg" alt="../assets/images/media_logo_55.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_56.jpg" alt="../assets/images/media_logo_56.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_57.jpg" alt="../assets/images/media_logo_57.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_58.jpg" alt="../assets/images/media_logo_58.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_59.jpg" alt="../assets/images/media_logo_59.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_60.jpg" alt="../assets/images/media_logo_60.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_61.jpg" alt="../assets/images/media_logo_61.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_62.jpg" alt="../assets/images/media_logo_62.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_63.jpg" alt="../assets/images/media_logo_63.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_64.jpg" alt="../assets/images/media_logo_64.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_65.jpg" alt="../assets/images/media_logo_59.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_66.jpg" alt="../assets/images/media_logo_66.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_67.jpg" alt="../assets/images/media_logo_67.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_68.jpg" alt="../assets/images/media_logo_68.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_69.jpg" alt="../assets/images/media_logo_69.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_70.jpg" alt="../assets/images/media_logo_70.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_71.jpg" alt="../assets/images/media_logo_71.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_72.jpg" alt="../assets/images/media_logo_72.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 12 row end here -->
+
+      <!-- 13 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_73.jpg" alt="../assets/images/media_logo_73.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More </a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_74.jpg" alt="../assets/images/media_logo_74.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_75.jpg" alt="../assets/images/media_logo_75.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_76.jpg" alt="../assets/images/media_logo_76.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_77.jpg" alt="../assets/images/media_logo_77.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_78.jpg" alt="../assets/images/media_logo_78.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_79.jpg" alt="../assets/images/media_logo_79.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_80.jpg" alt="../assets/images/media_logo_80.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_81.jpg" alt="../assets/images/media_logo_81.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_82.jpg" alt="../assets/images/media_logo_82.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_83.jpg" alt="../assets/images/media_logo_83.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_84.jpg" alt="../assets/images/media_logo_84.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 14 row end here -->
+
+      <!-- 15 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_85.jpg" alt="../assets/images/media_logo_85.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_86.jpg" alt="../assets/images/media_logo_86.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_87.jpg" alt="../assets/images/media_logo_87.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_88.jpg" alt="../assets/images/media_logo_88.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_89.jpg" alt="../assets/images/media_logo_89.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_90.jpg" alt="../assets/images/media_logo_90.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 15 row end here -->
+
+      <!-- 16 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_91.jpg" alt="../assets/images/media_logo_91.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_92.jpg" alt="../assets/images/media_logo_92.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_93.jpg" alt="../assets/images/media_logo_93.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_94.jpg" alt="../assets/images/media_logo_94.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_95.jpg" alt="../assets/images/media_logo_95.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_96.jpg" alt="../assets/images/media_logo_96.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_97.jpg" alt="../assets/images/media_logo_97.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_98.jpg" alt="../assets/images/media_logo_98.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_99.jpg" alt="../assets/images/media_logo_99.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_100.jpg" alt="../assets/images/media_logo_100.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_101.jpg" alt="../assets/images/media_logo_101.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_102.jpg" alt="../assets/images/media_logo_102.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_103.jpg" alt="../assets/images/media_logo_103.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_104.jpg" alt="../assets/images/media_logo_104.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_105.jpg" alt="../assets/images/media_logo_105.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_106.jpg" alt="../assets/images/media_logo_106.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_107.jpg" alt="../assets/images/media_logo_107.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_108.jpg" alt="../assets/images/media_logo_108.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_109.jpg" alt="../assets/images/media_logo_109.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_110.jpg" alt="../assets/images/media_logo_110.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_111.jpg" alt="../assets/images/media_logo_111.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_112.jpg" alt="../assets/images/media_logo_112.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_113.jpg" alt="../assets/images/media_logo_113.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_114.jpg" alt="../assets/images/media_logo_114.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_115.jpg" alt="../assets/images/media_logo_115.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_116.jpg" alt="../assets/images/media_logo_116.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_117.jpg" alt="../assets/images/media_logo_117.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_118.jpg" alt="../assets/images/media_logo_118.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_119.jpg" alt="../assets/images/media_logo_119.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_120.jpg" alt="../assets/images/media_logo_120.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 10 row end here -->
+
+      <!-- 13 row start -->
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_121.jpg" alt="../assets/images/media_logo_121.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_122.jpg" alt="../assets/images/media_logo_122.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_123.jpg" alt="../assets/images/media_logo_123.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_124.jpg" alt="../assets/images/media_logo_124.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_1125.jpg" alt="../assets/images/media_logo_125.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_126.jpg" alt="../assets/images/media_logo_126.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 21 row end here -->
+
+      <!-- 12 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_127.jpg" alt="../assets/images/media_logo_127.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_128.jpg" alt="../assets/images/media_logo_128.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_129.jpg" alt="../assets/images/media_logo_129.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_130.jpg" alt="../assets/images/media_logo_130.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_131.jpg" alt="../assets/images/media_logo_131.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_132.jpg" alt="../assets/images/media_logo_132.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 22 row end here -->
+
+
+      <!-- 23 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_133.jpg" alt="../assets/images/media_logo_133.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_134.jpg" alt="../assets/images/media_logo_134.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_135.jpg" alt="../assets/images/media_logo_135.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_136.jpg" alt="../assets/images/media_logo_136.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_137.jpg" alt="../assets/images/media_logo_137.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_138.jpg" alt="../assets/images/media_logo_138.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 23 row end here -->
+
+
+
+      <!-- 10 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_139.jpg" alt="../assets/images/media_logo_139.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_140.jpg" alt="../assets/images/media_logo_140.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_141.jpg" alt="../assets/images/media_logo_141.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_142.jpg" alt="../assets/images/media_logo_142.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_143.jpg" alt="../assets/images/media_logo_143.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_144.jpg" alt="../assets/images/media_logo_144.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 24 row end here -->
+
+
+      <!-- 30 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_145.jpg" alt="../assets/images/media_logo_145.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_146.jpg" alt="../assets/images/media_logo_146.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_147.jpg" alt="../assets/images/media_logo_147.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_148.jpg" alt="../assets/images/media_logo_148.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_149.jpg" alt="../assets/images/media_logo_149.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_150.jpg" alt="../assets/images/media_logo_150.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 30 row end here -->
+
+
+      <!-- 31 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_151.jpg" alt="../assets/images/media_logo_151.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_152.jpg" alt="../assets/images/media_logo_152.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_153.jpg" alt="../assets/images/media_logo_153.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_154.jpg" alt="../assets/images/media_logo_154.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_155.jpg" alt="../assets/images/media_logo_155.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_156.jpg" alt="../assets/images/media_logo_156.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 30 row end here -->
+
+
+      <!-- 32 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_157.jpg" alt="../assets/images/media_logo_157.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_158.jpg" alt="../assets/images/media_logo_158.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_159.jpg" alt="../assets/images/media_logo_159.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_160.jpg" alt="../assets/images/media_logo_160.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_161.jpg" alt="../assets/images/media_logo_161.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_162.jpg" alt="../assets/images/media_logo_162.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 32 row end here -->
+
+      <!-- 33 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_163.jpg" alt="../assets/images/media_logo_163.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_164.jpg" alt="../assets/images/media_logo_164.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_165.jpg" alt="../assets/images/media_logo_165.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_166.jpg" alt="../assets/images/media_logo_166.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_167.jpg" alt="../assets/images/media_logo_167.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_168.jpg" alt="../assets/images/media_logo_168.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 33 row end here -->
+
+
+      <!-- 34 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_169.jpg" alt="../assets/images/media_logo_169.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_170.jpg" alt="../assets/images/media_logo_170.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_171.jpg" alt="../assets/images/media_logo_171.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_172.jpg" alt="../assets/images/media_logo_172.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_173.jpg" alt="../assets/images/media_logo_173.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_174.jpg" alt="../assets/images/media_logo_174.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 34 row end here -->
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_176.jpg" alt="../assets/images/media_logo_176.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_177.jpg" alt="../assets/images/media_logo_177.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_178.jpg" alt="../assets/images/media_logo_178.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_180.jpg" alt="../assets/images/media_logo_180.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_174.jpg" alt="../assets/images/media_logo_174.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_175.jpg" alt="../assets/images/media_logo_175.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <!-- 30 row end here -->
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_181.jpg" alt="../assets/images/media_logo_181.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More </a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_182.jpg" alt="../assets/images/media_logo_182.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_183.jpg" alt="../assets/images/media_logo_183.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_184.jpg" alt="../assets/images/media_logo_184.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_185.jpg" alt="../assets/images/media_logo_185.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_186.jpg" alt="../assets/images/media_logo_186.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+      <!-- media companies logo end here -->
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_187.jpg" alt="../assets/images/media_logo_187.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_188.jpg" alt="../assets/images/media_logo_188.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_189.jpg" alt="../assets/images/media_logo_189.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_190.jpg" alt="../assets/images/media_logo_190.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_191.jpg" alt="../assets/images/media_logo_191.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_192.jpg" alt="../assets/images/media_logo_192.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_193.jpg" alt="../assets/images/media_logo_193.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_194.jpg" alt="../assets/images/media_logo_194.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_195.jpg" alt="../assets/images/media_logo_195.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_196.jpg" alt="../assets/images/media_logo_196.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_197.jpg" alt="../assets/images/media_logo_197.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_198.jpg" alt="../assets/images/media_logo_198.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_199.jpg" alt="../assets/images/media_logo_199.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_200.jpg" alt="../assets/images/media_logo_200.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_201.jpg" alt="../assets/images/media_logo_201.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_202.jpg" alt="../assets/images/media_logo_202.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_203.jpg" alt="../assets/images/media_logo_203.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_204.jpg" alt="../assets/images/media_logo_204.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_205.jpg" alt="../assets/images/media_logo_205.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_206.jpg" alt="../assets/images/media_logo_206.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_207.jpg" alt="../assets/images/media_logo_207.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_208.jpg" alt="../assets/images/media_logo_208.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_209.jpg" alt="../assets/images/media_logo_209.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_210.jpg" alt="../assets/images/media_logo_210.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_211.jpg" alt="../assets/images/media_logo_211.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_212.jpg" alt="../assets/images/media_logo_212.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_213.jpg" alt="../assets/images/media_logo_213.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_214.jpg" alt="../assets/images/media_logo_214.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_215.jpg" alt="../assets/images/media_logo_215.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_216.jpg" alt="../assets/images/media_logo_216.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_217.jpg" alt="../assets/images/media_logo_217.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_218.jpg" alt="../assets/images/media_logo_218.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_219.jpg" alt="../assets/images/media_logo_219.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_220.jpg" alt="../assets/images/media_logo_220.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_221.jpg" alt="../assets/images/media_logo_221.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_222.jpg" alt="../assets/images/media_logo_222.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_223.jpg" alt="../assets/images/media_logo_223.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_224.jpg" alt="../assets/images/media_logo_224.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_225.jpg" alt="../assets/images/media_logo_225.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_226.jpg" alt="../assets/images/media_logo_226.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_227.jpg" alt="../assets/images/media_logo_227.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_228.jpg" alt="../assets/images/media_logo_228.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_229.jpg" alt="../assets/images/media_logo_229.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_229.jpg" alt="../assets/images/media_logo_229.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_230.jpg" alt="../assets/images/media_logo_230.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_231.jpg" alt="../assets/images/media_logo_231.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_232.jpg" alt="../assets/images/media_logo_232.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_233.jpg" alt="../assets/images/media_logo_233.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_234.jpg" alt="../assets/images/media_logo_234.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_235.jpg" alt="../assets/images/media_logo_235.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_236.jpg" alt="../assets/images/media_logo_236.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_237.jpg" alt="../assets/images/media_logo_237.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_238.jpg" alt="../assets/images/media_logo_238.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_239.jpg" alt="../assets/images/media_logo_239.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_240.jpg" alt="../assets/images/media_logo_240.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_241.jpg" alt="../assets/images/media_logo_241.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_242.jpg" alt="../assets/images/media_logo_242.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_243.jpg" alt="../assets/images/media_logo_243.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_244.jpg" alt="../assets/images/media_logo_244.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_245.jpg" alt="../assets/images/media_logo_245.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_246.jpg" alt="../assets/images/media_logo_246.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_247.jpg" alt="../assets/images/media_logo_247.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_248.jpg" alt="../assets/images/media_logo_248.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_249.jpg" alt="../assets/images/media_logo_249.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_250.jpg" alt="../assets/images/media_logo_250.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_251.jpg" alt="../assets/images/media_logo_251.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_252.jpg" alt="../assets/images/media_logo_252.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_253.jpg" alt="../assets/images/media_logo_253.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_254.jpg" alt="../assets/images/media_logo_254.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_255.jpg" alt="../assets/images/media_logo_255.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_256.jpg" alt="../assets/images/media_logo_256.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_257.jpg" alt="../assets/images/media_logo_257.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_258.jpg" alt="../assets/images/media_logo_258.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_259.jpg" alt="../assets/images/media_logo_259.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_260.jpg" alt="../assets/images/media_logo_260.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_261.jpg" alt="../assets/images/media_logo_261.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_262.jpg" alt="../assets/images/media_logo_262.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_263.jpg" alt="../assets/images/media_logo_263.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_264.jpg" alt="../assets/images/media_logo_264.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_265.jpg" alt="../assets/images/media_logo_265.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_266.jpg" alt="../assets/images/media_logo_266.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_267.jpg" alt="../assets/images/media_logo_267.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_268.jpg" alt="../assets/images/media_logo_268.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_269.jpg" alt="../assets/images/media_logo_269.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+
+
+      <!-- 35 row start here -->
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_270.jpg" alt="../assets/images/media_logo_270.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_271.jpg" alt="../assets/images/media_logo_271.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_272.jpg" alt="../assets/images/media_logo_272.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_273.jpg" alt="../assets/images/media_logo_273.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_274.jpg" alt="../assets/images/media_logo_274.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+      <div class="border border-[#171a17] py-1">
+        <img src="../assets/images/media_logo_275.jpg" alt="../assets/images/media_logo_275.jpg" />
+        <h2 class="text-lg text-center font-semibold pt-5">
+          <a href="#">Read More</a>
+        </h2>
+      </div>
+    </div>
+    <!-- end here!!!  -->
+    <div class="w-full h-auto">
+      <div class="h-[100vh] flex justify-center items-center" style="
+        background: url('../Assets/images/Home/home-foodi-1.webp')
+          no-repeat center center;
+        background-size: cover;
+      ">
+        <div class="md:w-[40%] w-[80%] flex flex-col items-center mx-auto text-center">
+          <h2 class="text-[25px] font-bold">Download Our App</h2>
+          <p class="mt-4 font-semibold md:text-[17px] text-[15px]">
+            Yes, we all know, nothing like Ghar Ka Khana but Finding home food
+            was never an easy thing. Rejoice! Great News! Now it is with
+            Homefoodi.
+          </p>
+          <p class="mt-7 font-semibold md:text-[17px] text-[15px]">
+            Now you can get the food as per your taste/requirement from Home
+            Chef’s Kitchen and that too freshly prepared. Choose from a
+            countless variety of Home Chefs from Food to Bakers.
+          </p>
+          <div class="md:my-10 my-5">
+            <img class="md:h-[130px] h-[60px]" src="../Assets/images/Home/fav1.webp" alt="" />
+          </div>
+          <div class="w-full md:my-10 my-5 flex sm:flex-row flex-col justify-around">
+            <a href="https://play.google.com/store/apps/details?id=com.homefoodi.user&hl=en&pli=1">
+              <img class="h-[50px] rounded w-full" src="../Assets/images/Home/playstore1.webp" alt="" />
+            </a>
+            <a href="https://apps.apple.com/in/app/homefoodi-home-food-in-noida/id1492850345">
+              <img class="h-[50px] rounded w-full sm:mt-0 mt-4" src="../Assets/images/Home/playstore2.webp" alt="" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="w-full h-auto">
+        <div class="md:h-[70vh] h-[100%] flex flex-col justify-center items-center" style="
+          background: url('../Assets/images/Home/download.svg') no-repeat
+            center center;
+          background-size: cover;
+        ">
+          <div class="w-[80%] md:py-[80px] py-[40px] text-center mx-auto">
+            <a class="md:text-[28px] text-[20px] text-[#EF4E24] font-bold"
+              href="https://homefoodi.com/delivery-area-in-greater-noida/" target="_blank">Noida | Greater Noida |
+              Ghaziabad | Delhi | Gurgaon | Bengaluru |
+              Hyderabad | Mumbai</a>
+            <p class="md:text-[20px] text-[16px] mt-8 text-[#EF4E24] font-semibold">
+              Food Delivery Apps <span class="text-[#000]">|</span> Food for
+              Senior Citizens <span class="text-[#000]">|</span> Home Food
+              Delivery in Noida <span class="text-[#000]">|</span> Home Food
+              Delivery in Bangalore <span class="text-[#000]">|</span> Order
+              Food Online in Ghaziabad <span class="text-[#000]">|</span> Home
+              Delivery Food Bangalore <span class="text-[#000]">|</span> Home
+              Delivery Food in Hyderabad
+              <span class="text-[#000]">|</span> Homemade Food Delivery in
+              Mumbai <span class="text-[#000]">|</span> Home Delivery Food in
+              Gurgaon <span class="text-[#000]">|</span> Tiffin Delivery Service
+              in Noida <span class="text-[#000]">|</span> Online Home Food
+              Delivery in Noida <span class="text-[#000]">|</span> Food Delivery
+              in Noida <span class="text-[#000]">|</span> Home Made Food
+              Delivery in Noida <span class="text-[#000]">|</span> Biryani
+              Delivery in Noida <span class="text-[#000]">|</span> Online Cake
+              Delivery in Noida <span class="text-[#000]">|</span> Cakes
+              Delivery in Noida <span class="text-[#000]">|</span> Corporate
+              Catering Services in Noida
+              <span class="text-[#000]">|</span> Party Catering Services in
+              Noida <span class="text-[#000]">|</span> Diet Food
+              <span class="text-[#000]">|</span> Homemade Veg Thali Delivery
+              <span class="text-[#000]">|</span> Ghar ka Khana
+              <span class="text-[#000]">|</span> Food for Covid Patients
+              <span class="text-[#000]">|</span> Fresh and Healthy Home Cooked
+              Food <span class="text-[#000]">|</span> Home Food near Me
+              <span class="text-[#000]">|</span> Order Homemade Sweets | Online
+              Biryani Order <span class="text-[#000]">|</span> Biryani near Me
+              <span class="text-[#000]">|</span> Cakes
+              <span class="text-[#000]">|</span> Cakes Shop near Me
+              <span class="text-[#000]">|</span> Catering Services near Me
+              <span class="text-[#000]">|</span> Bakeries near Me
+              <span class="text-[#000]">|</span> Home Food Delivery in Delhi
+              <span class="text-[#000]">|</span> Home Delivery Food in Delhi
+              <span class="text-[#000]">|</span> South Indian Food near Me
+              <span class="text-[#000]">|</span> Momos near Me
+              <span class="text-[#000]">|</span> Pizza near Me
+              <span class="text-[#000]">|</span> Bakery near Me
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-section  -->
+    <div class="bg-[#2C2C2C]">
+      <div class="w-[80%] py-[30px] mx-auto">
+        <div class="flex md:flex-row flex-col justify-between items-start">
+          <div class="mb-10">
+            <a href="home.html">
+              <img class="h-12" src="../Assets/images/Home/white-logo-8.webp" alt="" />
+            </a>
+            <div class="text-white text-[20px] mt-[10px]">
+              <a href="https://www.facebook.com/homefoodiapp" target="_blank"> <i
+                  class="fa-brands fa-facebook-f mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+              <a href="https://twitter.com/homefoodi" target="_blank">
+                <i class="fa-brands fa-twitter mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+              <a href="https://www.instagram.com/home_foodi/" target="_blank">
+                <i class="fa-brands fa-instagram mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+              <a href="https://www.youtube.com/homefoodiapp" target="_blank">
+                <i class="fa-brands fa-youtube mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/homefoodi/" target="_blank">
+                <i class="fa-brands fa-linkedin-in mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+              <a href="https://in.pinterest.com/homefoodiapp/" target="_blank">
+                <i class="fa-brands fa-pinterest-p mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+              </a>
+
+            </div>
+          </div>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="#" class="mr-3">HOME</a>
+            <a href="#" class="mr-3">ABOUT US</a>
+            <a href="#" class="mr-3">OUR CHEFS</a>
+            <a href="#" class="mr-3">JOIN US</a>
+            <a href="#" class="mr-3">MEDIA AND EVENTS</a>
+            <a href="#" class="mr-3">BLOG</a>
+            <a href="#" class="mr-3">CONTACT US</a>
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col-reverse justify-between my-10">
+          <h2 class="md:text-[17px] text-[15px] text-white font-bold"><span class="italic">Nibble</span>@2023 All Rights
+            Reserved.</h2>
+          <div class="flex sm:flex-row flex-col text-white text-[13px]">
+            <a href="#" class="mr-3">PRIVACY POLICY</a>
+            <a href="#" class="mr-3">USER T&C</a>
+            <a href="#" class="mr-3">COOKIE POLICY</a>
+            <a href="#" class="mr-3">CHEFS & TC</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+</body>
+
+</html>

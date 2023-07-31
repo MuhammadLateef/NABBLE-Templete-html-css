@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+	 <!-- font-awsome-icons  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+    <nav class="w-full bg-white shadow-lg fixed">
+      <div class="mx-auto px-5 w-[90%] mx-auto">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Website Logo -->
+              <a href="#" class="flex items-center py-4 px-2">
+                <img
+                  src="../assets/images/logo.webp"
+                  alt="Logo"
+                  class="h-8 w-full mr-2"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Secondary Navbar items -->
+          <div class="hidden lg:flex items-center lg:space-x-9 md:space-x-2">
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-4">
+              <a href="" class="py-4 px-2 text-[#e65c00] font-semibold">HOME</a>
+			  <li class="list-none relative group">
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >WHO ARE WE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+			  <ul class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-web" class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-app" class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+          </ul>
+			 </li>
+             <li class="list-none relative group">
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >DELIVERY AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+			  <ul class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-web" class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-app" class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+			  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+          </ul>
+			 </li>
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >BLOGS</a
+              >
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >CONTACT US
+              </a>
+            </div>
+            <a
+              href=""
+              class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded hover:bg-[#ff944d] hover:text-white transition duration-300"
+              >HOW TO ORDER</a
+            >
+            <a
+              href=""
+              class="py-1 px-2 font-medium text-white bg-green-700 rounded hover:bg-green-400 transition duration-300"
+              >JOIN A CHEF</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <div class="lg:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 text-white bg-[#e65c00] font-semibold"
+              >HOME</a
+            >
+          </li>
+		  <li class="list-none relative group">
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >WHO WE ARE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+			  <ul class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-web" class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-app" class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+			  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+          </ul>
+			 </li>
+         <li class="list-none relative group">
+              <a
+                href=""
+                class="py-4 px-2 text-gray-500 font-semibold transition duration-300"
+                >DELIVERY AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+			  <ul class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-web" class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-app" class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+			  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>  <li class="py-4 hover:bg-gray-100"><a href="#portfolio-graphics" class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+          </ul>
+			 </li>
+
+          </li>
+          
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 hover:bg-[#e65c00] transition duration-300"
+              >BLOGS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-2 py-4  hover:bg-[#e65c00] transition duration-300"
+              >Contact Us</a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href=""
+              class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded hover:bg-[#ff944d] hover:text-white transition duration-300"
+              >HOW TO ORDER</a
+            >
+			<li class="py-4">
+				 <a
+              href=""
+              class="py-1 px-2 font-medium text-white bg-[]-700 rounded hover:bg-green-400 transition duration-300"
+              >JOIN A CHEF</a
+            >
+			</li>
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+
+    <!-- header goes here -->
+    <header></header>
+    <!-- header end here -->
+  </body>
+</html>

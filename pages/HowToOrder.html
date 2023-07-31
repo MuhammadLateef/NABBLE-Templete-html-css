@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../Assets/css/global.css" />
+  <title>Order</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-slide {
+      height: 100%;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Custom arrow styles */
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      /* background-color: #333; */
+      color: #DD4E29;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+
+    .swiper-button-next {
+      right: 10px;
+    }
+  </style>
+  <!-- font-awsome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .whats-app,
+    .whats-app1 {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 15px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whats-app1 {
+      left: 16px;
+      background-color: #EF4E24;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+
+    .myphone {
+      margin-top: 16px;
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="../Assets/fav-icon.ico">
+</head>
+
+<body>
+
+  <a class="whats-app"
+    href='https://api.whatsapp.com/send?phone=917669237937&text=Hello,%20Latest%20Blog%20%26%20Articles%20by%20Home%20Food%20Delivery%20App%3A%20Homefoodi-https://homefoodi.com/blog/%20How%20do%20I%20Order%20from%20Homefoodi...?'
+    target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+  <a class="whats-app1" href='tel:+234917669237937'>
+    <i class="fa-sharp fa-solid fa-phone myphone"></i>
+  </a>
+  <!-- Navbar goes here -->
+  <!-- Navbar  -->
+  <nav class="w-full bg-white shadow-lg fixed" style="z-index: 99;">
+    <div class="mx-auto px-5 w-[90%] mx-auto">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <!-- Website Logo -->
+            <a href="home.html" class="flex items-center py-4 px-2">
+              <img src="../Assets/images/logo.webp" alt="Logo" class="h-8 w-full mr-2" />
+            </a>
+          </div>
+        </div>
+        <!-- Secondary Navbar items -->
+        <div class="hidden lg:flex items-center lg:space-x-9 md:space-x-2">
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="home.html" class="py-4 px-2 text-[#e65c00] font-semibold">HOME</a>
+            <li class="list-none relative group">
+              <a href="#" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">WHO ARE WE <span><i
+                    class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul
+                class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+                <li class="py-2 hover:bg-gray-100"><a href="Aboutus.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="ourcheif.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Gallery.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Newsevents.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+              </ul>
+            </li>
+            <li class="list-none relative group">
+              <a href="ServingArea.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">DELIVERY
+                AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul
+                class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+                <li class="py-2 hover:bg-gray-100"><a href="devliveryareasDilhi.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Bangalore.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Hyderabad.html"
+                    class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Mumbai.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+                <li class="py-2 hover:bg-gray-100"><a href="Noida.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="Ghaziabad.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="Gurgaon.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+                <li class="py-4 hover:bg-gray-100"><a href="GreaterNoida.html"
+                    class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+              </ul>
+            </li>
+            <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">BLOGS</a>
+            <a href="contactus.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">CONTACT US
+            </a>
+          </div>
+          <a href="HowToOrder.html"
+            class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded-full hover:bg-[#ff944d] hover:text-white transition duration-300">HOW
+            TO ORDER</a>
+          <a href="joinChef.html"
+            class="py-1 px-2 font-medium text-white bg-green-700 rounded-full hover:bg-green-400 transition duration-300">JOIN
+            A CHEF</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500 hover:text-[#e65c00]-500" x-show="!showMenu" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active my-3">
+          <a href="home.html" class="block text-sm px-2 py-2 text-white bg-[#e65c00] font-semibold">HOME</a>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="#" class="py-2 px-2 text-gray-500 font-semibold transition duration-300">WHO WE ARE <span><i
+                class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-2 hover:bg-gray-100"><a href="Aboutus.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">ABOUT US </a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="ourcheif.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">OUR CHEFS</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="#"
+                class="block text-gray-700 ml-3  text-md font-semibold">GALLERY</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Newsevents.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">MEDIA & EVENTS</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Noida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Ghaziabad.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="Gurgaon.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+            <li class="py-2 hover:bg-gray-100"><a href="GreaterNoida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list-none relative group my-3">
+          <a href="ServingArea.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">DELIVERY
+            AREAS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+          </a>
+          <ul
+            class="absolute top-full left-0 hidden mt-2 bg-white shadow-lg p-2 space-y-2 group-hover:block  w-[160%] ">
+            <li class="py-4 hover:bg-gray-100"><a href="devliveryareasDilhi.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">DEHLI </a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Bangalore.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">BANGLORE</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Hyderabad.html"
+                class="block text-gray-700 ml-3  text-md font-semibold">HYDERABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Mumbai.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">MUMBAI</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Noida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">NOIDA</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Ghaziabad.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GHAZIABAD</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="Gurgaon.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GURGAON</a></li>
+            <li class="py-4 hover:bg-gray-100"><a href="GreaterNoida.html"
+                class="block text-gray-700 ml-3  text-md  font-semibold ">GRATER NOIDA</a></li>
+          </ul>
+        </li>
+
+        <li class="my-3">
+          <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold transition duration-300">BLOGS</a>
+        </li>
+        <li class="my-3">
+          <a href="contactus.html"
+            class="py-4 px-2 uppercase text-gray-500 font-semibold transition duration-300">Contact Us</a>
+        </li>
+        <li class="py-4 ml-3 my-3">
+          <a href="HowToOrder.html"
+            class="py-1 px-2 bg-[#e65c00] font-medium text-white border-rounded rounded-full hover:bg-[#ff944d] hover:text-white transition duration-300">HOW
+            TO ORDER</a>
+        <li class="py-4 ml-3 my-3">
+          <a href="joinChef.html"
+            class="py-1 px-2 bg-[#2F7F2D] font-medium text-white border-rounded rounded-full hover:bg-[#2F7F2D] hover:text-white transition duration-300">JOIN
+            A CHEF</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="w-full md:py-[70px]">
+    <div class="w-[80%] flex md:flex-row flex-col justify-between items-center mx-auto md:py-[100px] py-[30px]">
+      <div class="bg-[#EF4E24] md:w-[48%] w-full px-[20px] py-[25px] md:mb-0 mb-[60px] border-1 rounded-[8px] "
+        style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+        <h2 class="sm:text-[26px] text-[20px] font-semibold py-[5px] text-white">FOLLOW THE BELOW STEPS:</h2>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Type Home Food Delivery On Play Store Or Apple
+            Store</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Download The Homefoodi Home Food Delivery APP</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Allow Homefoodi APP To Detect Your Current
+            Location.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Browse Through the Available Home Chefs In Your
+            Area.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">The Kitchen Which Shows First Is Closest To You.
+          </p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Add The Items to Your Cart And Proceed To
+            Checkout.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Enter Your Delivery Address and Select a Delivery
+            Time Slot.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Register Your Phone Through OTP Validation.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Select Pay Online Or Cash On Delivery To Place
+            Order.</p>
+        </div>
+        <div class="flex items-center my-6">
+          <i class="fa-solid fa-list-check text-[25px] mr-3 text-[#fff]"></i>
+          <p class="text-white sm:text-[18px] text-[15px] font-normal">Click On View Order to Talk To The Home Chef.</p>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="md:w-[45%] w-full md:h-[75vh] sm:h-[90vh] h-[40vh] swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../Assets/images/orderNow/img1.png" alt="img"> </div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img1.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img2.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img3.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img4.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img5.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img6.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img8.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img9.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img10.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img11.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img12.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img13.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img14.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img15.png" alt="img"></div>
+          <div class="swiper-slide"> <img src="../Assets/images/orderNow/img16.png" alt="img"></div>
+        </div>
+        <div class="swiper-button-next md:right-10"></div>
+        <div class="swiper-button-prev md:left-10"></div>
+      </div>
+    </div>
+  </div>
+  <!-- section---2 -->
+  <div class="w-full md:py-[100px] py-[40px]"
+    style="background-image: linear-gradient(180deg,rgba(219,219,219,0.8) 0%,rgba(255,255,255,0.8) 100%)!important;">
+    <div class="w-[80%] mx-auto">
+      <h2 class="font-bold md:text-[26px] text-[20px] md:py-[30px] py-[10px]">The Most Loved Online Food Delivery App
+        for Home Food Delivery</h2>
+      <div class="flex md:flex-row flex-col items-center justify-center py-[30px]">
+        <div class="py-[20px] md:mb-[0px] mb-[40px] mr-[5%]  px-[20px] rounded-[10px] bg-white"
+          style="box-shadow: 0px 47px 48px 0px rgba(100,146,188,0.2);">
+          <img class="mb-[30px] rounded-[5px]" src="../Assets/images/Home/playstore2.webp" alt="">
+          <h3 class="font-semibold text-[18px] text-center text-black mb-[10px]">Apple Store Downloads</h3>
+          <div class="rounded-[10px] py-[15px]"
+            style="background-image: linear-gradient(90deg,#4facfe 0%,#00f2fe 100%); box-shadow: 0px 20px 40px 0px rgba(72,178,254,0.7);">
+            <p class="text-[50px] font-bold text-center text-[#000000] leading-[72px]"> 100K+</p>
+          </div>
+        </div>
+        <div class="py-[20px] md:mb-[0px] mb-[40px] mr-[5%]  px-[20px] rounded-[10px] bg-white"
+          style="box-shadow: 0px 47px 48px 0px rgba(100,146,188,0.2);">
+          <img class="mb-[30px] rounded-[5px]" src="../Assets/images/Home/playstore1.webp" alt="">
+          <h3 class="font-semibold text-[18px] text-center text-black mb-[10px]">Apple Store Downloads</h3>
+          <div class="rounded-[10px] py-[15px]"
+            style="background-image: linear-gradient(90deg,#4facfe 0%,#00f2fe 100%); box-shadow: 0px 20px 40px 0px rgba(72,178,254,0.7);">
+            <p class="text-[50px] font-bold text-center text-[#000000] leading-[72px]"> 100K+</p>
+          </div>
+        </div>
+        <div class="py-[20px] md:mb-[0px] mb-[40px] mr-[5%]  px-[20px] rounded-[10px] bg-white"
+          style="box-shadow: 0px 47px 48px 0px rgba(100,146,188,0.2);">
+          <img class="mb-[30px] rounded-[5px]" src="../Assets/images/Home/rating.jpg" alt="">
+          <h3 class="font-semibold text-[18px] text-center text-black mb-[10px]">Our User Rating</h3>
+          <div class="rounded-[10px] py-[15px]"
+            style="background-image: linear-gradient(90deg,#4facfe 0%,#00f2fe 100%); box-shadow: 0px 20px 40px 0px rgba(72,178,254,0.7);">
+            <p class="text-[50px] font-bold text-center text-[#000000] leading-[72px]"> 4.8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full h-auto">
+    <div class="md:h-[70vh] h-[100%] flex flex-col justify-center items-center" style="
+            background: url('../../Assets/images/Home/download.svg') no-repeat
+              center center;
+            background-size: cover;
+          ">
+      <div class="w-[80%] md:py-[80px] py-[40px] text-center mx-auto">
+        <a class="md:text-[28px] text-[20px] text-[#EF4E24] font-bold"
+          href="https://homefoodi.com/delivery-area-in-greater-noida/" target="_blank">Noida | Greater Noida | Ghaziabad
+          | Delhi | Gurgaon | Bengaluru |
+          Hyderabad | Mumbai</a>
+        <p class="md:text-[20px] text-[16px] mt-8 text-[#EF4E24] font-semibold">
+          Food Delivery Apps <span class="text-[#000]">|</span> Food for
+          Senior Citizens <span class="text-[#000]">|</span> Home Food
+          Delivery in Noida <span class="text-[#000]">|</span> Home Food
+          Delivery in Bangalore <span class="text-[#000]">|</span> Order
+          Food Online in Ghaziabad <span class="text-[#000]">|</span> Home
+          Delivery Food Bangalore <span class="text-[#000]">|</span> Home
+          Delivery Food in Hyderabad
+          <span class="text-[#000]">|</span> Homemade Food Delivery in
+          Mumbai <span class="text-[#000]">|</span> Home Delivery Food in
+          Gurgaon <span class="text-[#000]">|</span> Tiffin Delivery Service
+          in Noida <span class="text-[#000]">|</span> Online Home Food
+          Delivery in Noida <span class="text-[#000]">|</span> Food Delivery
+          in Noida <span class="text-[#000]">|</span> Home Made Food
+          Delivery in Noida <span class="text-[#000]">|</span> Biryani
+          Delivery in Noida <span class="text-[#000]">|</span> Online Cake
+          Delivery in Noida <span class="text-[#000]">|</span> Cakes
+          Delivery in Noida <span class="text-[#000]">|</span> Corporate
+          Catering Services in Noida
+          <span class="text-[#000]">|</span> Party Catering Services in
+          Noida <span class="text-[#000]">|</span> Diet Food
+          <span class="text-[#000]">|</span> Homemade Veg Thali Delivery
+          <span class="text-[#000]">|</span> Ghar ka Khana
+          <span class="text-[#000]">|</span> Food for Covid Patients
+          <span class="text-[#000]">|</span> Fresh and Healthy Home Cooked
+          Food <span class="text-[#000]">|</span> Home Food near Me
+          <span class="text-[#000]">|</span> Order Homemade Sweets | Online
+          Biryani Order <span class="text-[#000]">|</span> Biryani near Me
+          <span class="text-[#000]">|</span> Cakes
+          <span class="text-[#000]">|</span> Cakes Shop near Me
+          <span class="text-[#000]">|</span> Catering Services near Me
+          <span class="text-[#000]">|</span> Bakeries near Me
+          <span class="text-[#000]">|</span> Home Food Delivery in Delhi
+          <span class="text-[#000]">|</span> Home Delivery Food in Delhi
+          <span class="text-[#000]">|</span> South Indian Food near Me
+          <span class="text-[#000]">|</span> Momos near Me
+          <span class="text-[#000]">|</span> Pizza near Me
+          <span class="text-[#000]">|</span> Bakery near Me
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- footer-section  -->
+  <div class="bg-[#2C2C2C]">
+    <div class="w-[80%] py-[30px] mx-auto">
+      <div class="flex md:flex-row flex-col justify-between items-start">
+        <div class="mb-10">
+          <a href="home.html">
+            <img class="h-12" src="../../Assets/images/Home/white-logo-8.webp" alt="" />
+          </a>
+          <div class="text-white text-[20px] mt-[10px]">
+            <a href="https://www.facebook.com/homefoodiapp" target="_blank"> <i
+                class="fa-brands fa-facebook-f mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://twitter.com/homefoodi" target="_blank">
+              <i class="fa-brands fa-twitter mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://www.instagram.com/home_foodi/" target="_blank">
+              <i class="fa-brands fa-instagram mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://www.youtube.com/homefoodiapp" target="_blank">
+              <i class="fa-brands fa-youtube mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/homefoodi/" target="_blank">
+              <i class="fa-brands fa-linkedin-in mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+            <a href="https://in.pinterest.com/homefoodiapp/" target="_blank">
+              <i class="fa-brands fa-pinterest-p mr-4 cursor-pointer hover:text-[#007BB6]"></i>
+            </a>
+
+          </div>
+        </div>
+        <div class="flex sm:flex-row flex-col text-white text-[13px]">
+          <a href="#" class="mr-3">HOME</a>
+          <a href="#" class="mr-3">ABOUT US</a>
+          <a href="#" class="mr-3">OUR CHEFS</a>
+          <a href="#" class="mr-3">JOIN US</a>
+          <a href="#" class="mr-3">MEDIA AND EVENTS</a>
+          <a href="#" class="mr-3">BLOG</a>
+          <a href="#" class="mr-3">CONTACT US</a>
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col-reverse justify-between my-10">
+        <h2 class="md:text-[17px] text-[15px] text-white font-bold"><span class="italic">Nibble</span>@2023 All Rights
+          Reserved.</h2>
+        <div class="flex sm:flex-row flex-col text-white text-[13px]">
+          <a href="#" class="mr-3">PRIVACY POLICY</a>
+          <a href="#" class="mr-3">USER T&C</a>
+          <a href="#" class="mr-3">COOKIE POLICY</a>
+          <a href="#" class="mr-3">CHEFS & TC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
